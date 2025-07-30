@@ -30,13 +30,12 @@ export const SimulateSpike = () => {
       await navigator.clipboard.writeText(text);
       alert("Product ID copied to clipboard!");
     } catch (err) {
-      console.error("Copy failed", err);
+      console.error("Copy failed , try again", err);
     }
   };
 
   return (
     <div>
-
   <Navbar/>
     <div className="space-y-6">
       <div className="p-4 bg-white rounded shadow flex flex-wrap items-center gap-4">
