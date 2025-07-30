@@ -2,6 +2,7 @@ import { useState, type ReactNode } from "react";
 import axios from "../api/api";
 import { useInventory } from "../context/Context";
 import { ClipboardCopy } from "lucide-react";
+import Navbar from "./Navbar";
 
 export const SimulateSpike = () => {
   const { report } = useInventory();
@@ -34,6 +35,9 @@ export const SimulateSpike = () => {
   };
 
   return (
+    <div>
+
+  <Navbar/>
     <div className="space-y-6">
       <div className="p-4 bg-white rounded shadow flex flex-wrap items-center gap-4">
         <div>
@@ -89,5 +93,6 @@ export const SimulateSpike = () => {
         </div>
       ))}
     </div>
+      </div>
   );
 };
