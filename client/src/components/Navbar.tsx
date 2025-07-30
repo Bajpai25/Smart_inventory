@@ -62,6 +62,11 @@ export const Navbar = () => {
     Simulate
   </Link>
 </div>
+<div className="px-4 py-2 hover:bg-slate-700 rounded transition-colors">
+  <Link to="/allproducts" className="text-black hover:text-white font-medium">
+    Products
+  </Link>
+</div>
 
           {/* <DropdownMenu>
             <DropdownMenuTrigger asChild>
@@ -152,6 +157,17 @@ export const Navbar = () => {
                       
                     </div>
                     Simulate
+                  </Button>
+                  </Link>
+                  <Link to="/allproducts">
+                  <Button
+                    variant="ghost"
+                    className="w-full justify-start h-12 rounded-xl hover:bg-white/60 backdrop-blur-sm transition-all duration-200 text-gray-700"
+                  >
+                    <div className="p-2 bg-gradient-to-r from-red-500 to-pink-600 rounded-lg mr-3">
+                      
+                    </div>
+                    Products
                   </Button>
                   </Link>
                 </div>

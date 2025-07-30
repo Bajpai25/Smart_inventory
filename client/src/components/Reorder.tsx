@@ -104,13 +104,13 @@ export const ReorderReport = () => {
     return (
       <div className="min-h-screen bg-gradient-to-br from-purple-50 via-blue-50 to-indigo-100">
         <section className="container mx-auto p-6 space-y-8">
-          {/* Header Skeleton */}
+     
           <div className="text-center mb-8">
             <Skeleton className="h-8 w-64 mx-auto mb-2" />
             <Skeleton className="h-4 w-96 mx-auto" />
           </div>
 
-          {/* Stats Cards Skeleton */}
+ 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
             {[...Array(3)].map((_, i) => (
               <div key={i} className="bg-white/80 backdrop-blur-sm rounded-2xl shadow-lg border border-white/20 p-6">
@@ -134,7 +134,7 @@ export const ReorderReport = () => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-purple-50 via-blue-50 to-indigo-100">
       <section className="container mx-auto p-6 space-y-8">
-        {/* Header */}
+     
         <div className="text-center mb-8">
           <div className="inline-flex items-center gap-2 bg-gradient-to-r from-purple-600 to-blue-600 text-white px-6 py-2 rounded-full text-sm font-medium mb-4">
             <Package className="h-4 w-4" />
@@ -156,7 +156,7 @@ export const ReorderReport = () => {
           </div>
         </div>
 
-        {/* Stats Cards */}
+     
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           <div className="bg-white/80 backdrop-blur-sm rounded-2xl shadow-lg border border-white/20 p-6 hover:shadow-xl transition-all duration-300">
             <div className="flex items-center space-x-4">
@@ -195,7 +195,7 @@ export const ReorderReport = () => {
           </div>
         </div>
 
-        {/* Products List */}
+      
         <div className="space-y-6">
           {report.length === 0 ? (
             <div className="bg-white/80 backdrop-blur-sm rounded-2xl shadow-lg border border-white/20 overflow-hidden">
@@ -215,7 +215,7 @@ export const ReorderReport = () => {
                 key={item.productId}
                 className="bg-white/90 backdrop-blur-sm rounded-2xl shadow-lg border border-white/20 overflow-hidden hover:shadow-xl transition-all duration-300 hover:-translate-y-1"
               >
-                {/* Card Header */}
+            
                 <div className="bg-gradient-to-r from-purple-500 to-blue-600 p-6">
                   <div className="flex items-center justify-between">
                     <div>
@@ -231,7 +231,7 @@ export const ReorderReport = () => {
                   </div>
                 </div>
 
-                {/* Card Content */}
+              
                 <div className="p-6">
                   <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-6">
                     <div className="bg-gradient-to-br from-blue-50 to-indigo-100 p-4 rounded-xl border border-blue-200">
