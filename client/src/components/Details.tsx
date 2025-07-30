@@ -126,7 +126,7 @@ export const ProductDetail = () => {
       <div className="container mx-auto px-4 py-8">
         {/* Header */}
         <div className="mb-8">
-          <Link to="/reorder-report">
+          <Link to="/">
             <Button
               variant="outline"
               className="mb-4 border-purple-200 text-purple-700 hover:bg-purple-50 hover:border-purple-300 bg-transparent"
