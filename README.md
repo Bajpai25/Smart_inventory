@@ -66,5 +66,5 @@ A full-stack inventory management system built with **React**, **Node.js**, **Ex
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/inventory-system.git
-cd inventory-system
+git clone https://github.com/Bajpai25/Smart_inventory.git
+cd Smart_inventory
