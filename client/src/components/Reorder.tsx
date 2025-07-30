@@ -1,10 +1,9 @@
-
-
 import { useState, useEffect } from "react"
 import { Package, AlertTriangle, TrendingUp, DollarSign, RefreshCw, ShoppingCart, Eye } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Skeleton } from "@/components/ui/skeleton"
 import { useInventory } from "../context/Context"
+import { Link } from "react-router-dom"
 
 interface ReorderItem {
   productId: string
@@ -265,13 +264,15 @@ export const ReorderReport = () => {
                       <ShoppingCart className="mr-2 h-4 w-4" />
                       Create Order
                     </Button>
-                    <Button
-                      variant="outline"
-                      className="border-2 border-purple-200 text-purple-700 hover:bg-purple-50 hover:border-purple-300 transition-all duration-200 flex-1 sm:flex-none bg-transparent"
-                    >
-                      <Eye className="mr-2 h-4 w-4" />
-                      View Details
-                    </Button>
+                    <Link to={`/product-detail/${item.productId}`}>
+                      <Button
+                        variant="outline"
+                        className="border-2 border-purple-200 text-purple-700 hover:bg-purple-50 hover:border-purple-300 transition-all duration-200 flex-1 sm:flex-none bg-transparent"
+                      >
+                        <Eye className="mr-2 h-4 w-4" />
+                        View Details
+                      </Button>
+                    </Link>
                   </div>
                 </div>
               </div>
